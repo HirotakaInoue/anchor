@@ -1,0 +1,24 @@
+[package]
+name = "portman"
+version = "0.1.0"
+edition = "2021"
+description = "A TUI tool for managing ports and SSH tunnels on macOS"
+authors = ["You"]
+
+[dependencies]
+ratatui = "0.29"
+crossterm = "0.28"
+anyhow = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+dirs = "5.0"
+tokio = { version = "1.0", features = ["full"] }
+
+[[bin]]
+name = "portman"
+path = "src/main.rs"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true
