@@ -1,18 +1,18 @@
 [package]
 name = "portman"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 description = "A TUI tool for managing ports and SSH tunnels on macOS"
 authors = ["You"]
 
 [dependencies]
 ratatui = "0.29"
-crossterm = "0.28"
+crossterm = "0.29"
 anyhow = "1.0"
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-dirs = "5.0"
-tokio = { version = "1.0", features = ["full"] }
+dirs = "6.0"
+tokio = { version = "1.48", features = ["full"] }
 
 [[bin]]
 name = "portman"
