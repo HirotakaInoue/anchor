@@ -21,23 +21,23 @@ A beautiful TUI (Terminal User Interface) tool for managing ports and SSH tunnel
 
 ```bash
 # Clone or download the project
-cd portman
+cd anchor
 
 # Build release version
 cargo build --release
 
 # Install to your PATH (optional)
-cp target/release/portman /usr/local/bin/
+cp target/release/anchor /usr/local/bin/
 ```
 
 ## Usage
 
 ```bash
 # Run the application
-portman
+anchor
 
 # Or if not installed globally
-./target/release/portman
+./target/release/anchor
 ```
 
 ## Keyboard Shortcuts
@@ -88,7 +88,7 @@ ssh -L 3306:db-server:3306 user@jumphost.example.com
 
 Tunnel configurations are stored in:
 ```
-~/.config/portman/tunnels.json
+~/.config/anchor/tunnels.json
 ```
 
 ## Requirements

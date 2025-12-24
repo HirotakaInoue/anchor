@@ -1,5 +1,5 @@
 [package]
-name = "portman"
+name = "anchor"
 version = "0.1.0"
 edition = "2024"
 description = "A TUI tool for managing ports and SSH tunnels on macOS"
@@ -15,7 +15,7 @@ dirs = "6.0"
 tokio = { version = "1.48", features = ["full"] }
 
 [[bin]]
-name = "portman"
+name = "anchor"
 path = "src/main.rs"
 
 [profile.release]

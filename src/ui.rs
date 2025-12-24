@@ -48,7 +48,7 @@ fn draw_tabs(f: &mut Frame, app: &App, area: Rect) {
         .block(
             Block::default()
                 .borders(Borders::ALL)
-                .title(" PortMan ")
+                .title(" Anchor ")
                 .title_style(Style::default().fg(Color::Cyan).add_modifier(Modifier::BOLD)),
         )
         .select(match app.current_tab {

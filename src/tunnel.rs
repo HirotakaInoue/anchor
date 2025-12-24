@@ -182,6 +182,6 @@ impl TunnelManager {
         let config_dir = dirs::config_dir()
             .ok_or_else(|| anyhow::anyhow!("Could not find config directory"))?;
 
-        Ok(config_dir.join("portman").join("tunnels.json"))
+        Ok(config_dir.join("anchor").join("tunnels.json"))
     }
 }
